@@ -17,4 +17,4 @@ def get_longest_word(text: str) -> str:
 
 text_fragment = 'hello this is a string with words and spaces and big big woooooooooord'
 
-assert (get_longest_word(text_fragment)) == 'woooooooooord'
+assert get_longest_word(text_fragment) == 'woooooooooord'

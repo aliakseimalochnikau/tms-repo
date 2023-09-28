@@ -17,4 +17,4 @@ def get_most_frequent_word(text: str) -> str:
 
 text_fragment = 'hello this is a string with words and spaces and big big woooooooooord and and and'
 
-assert(get_most_frequent_word(text_fragment)) == 'and'
+assert get_most_frequent_word(text_fragment) == 'and'

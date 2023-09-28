@@ -11,9 +11,9 @@ def is_year_leap(year: int) -> bool:
         return False
 
 
-assert(is_year_leap(1700)) is False
-assert(is_year_leap(2012)) is True
-assert(is_year_leap(1904)) is True
-assert(is_year_leap(1900)) is False
-assert(is_year_leap(1600)) is True
+assert is_year_leap(1700) is False
+assert is_year_leap(2012) is True
+assert is_year_leap(1904) is True
+assert is_year_leap(1900) is False
+assert is_year_leap(1600) is True
 
