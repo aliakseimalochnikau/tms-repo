@@ -7,10 +7,8 @@
 def get_longest_word(text: str) -> str:
     words = text.split()
     longest_word = ''
-    max_chars = 0
     for word in words:
-        if len(word) > max_chars:
-            max_chars = len(word)
+        if len(word) > len(longest_word):
             longest_word = word
     return longest_word
 
