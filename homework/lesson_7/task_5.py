@@ -11,8 +11,9 @@ from functools import reduce
 def my_decorator(function):
     def find_factorial_extended(num):
         print(f'Функция получила на вход значение {num}')
-        print(f'Результат функции: {function(num)}')
-        return function(num)
+        result = function(num)
+        print(f'Результат функции: {result}')
+        return result
 
     return find_factorial_extended
 

@@ -8,8 +8,9 @@
 def my_decorator(function):
     def new_function(*args, **kwargs):
         print(f'Функция получила на вход значение {args}, {kwargs}')
-        print(f'Результат функции: {function(*args, **kwargs)}')
-        return function(*args, **kwargs)
+        result = function(*args, **kwargs)
+        print(f'Результат функции: {result}')
+        return result
 
     return new_function
 
@@ -19,5 +20,5 @@ def calculate_sum(a, b, c, d):
     return a + b + c + d
 
 
-result = calculate_sum(1, 2, d=3, c=4)
-print(f'sum = {result}')
+calculate = calculate_sum(1, 2, d=3, c=4)
+print(f'sum = {calculate}')
