@@ -1,0 +1,37 @@
+{
+  "07402100319977818590": {
+    "card_holder": "ALEX SMITH",
+    "currency": "EUR",
+    "money": 1190.75,
+    "card_number": "6116 5758 4656 1910",
+    "account_number": "07402100319977818590"
+  },
+  "11742392273153930253": {
+    "card_holder": "SAMANTHA RICHARDS",
+    "currency": "USD",
+    "money": 658.82,
+    "card_number": "4247 8030 7595 8421",
+    "account_number": "11742392273153930253"
+  },
+  "18031327933360630781": {
+    "card_holder": "GLEN FLETCHER",
+    "currency": "EUR",
+    "money": 784.94,
+    "card_number": "7862 8436 2602 2343",
+    "account_number": "18031327933360630781"
+  },
+  "00106333753655143262": {
+    "card_holder": "EMILY WINTERS",
+    "currency": "GBP",
+    "money": 708.185,
+    "card_number": "3026 0537 6247 0263",
+    "account_number": "00106333753655143262"
+  },
+  "21348014892408552976": {
+    "card_holder": "ALAN MILES",
+    "currency": "USD",
+    "money": 0.0,
+    "card_number": "5560 4656 6819 7170",
+    "account_number": "21348014892408552976"
+  }
+}
