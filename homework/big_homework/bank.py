@@ -173,7 +173,7 @@ class Controller:
                     account = input('Введите номер счёта, который следует пополнить:\n')
                     currency = self.bank.bank_accounts[account].currency
                     money = float(input(f'Введите сумму пополнения ({currency}):\n'))
-                    self.bank.bank_accounts[account].money += money
+                    self.bank.add_money(account, money)
                     print(f'Cчёт {account} был пополнен на сумму {currency} {money:,.2f}')
 
                 case 4:
