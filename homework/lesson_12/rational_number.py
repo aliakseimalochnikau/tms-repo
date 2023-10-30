@@ -16,9 +16,7 @@ class Rational:
         return f'{self.numerator}/{self.denominator}'
 
     def __normalise(self):
-        if self.numerator == 0:
-            self.__denominator = 1
-        elif self.denominator < 0:
+        if self.denominator < 0:
             self.__numerator = -self.numerator
             self.__denominator = abs(self.denominator)
 
@@ -84,5 +82,7 @@ if __name__ == '__main__':
     assert str(Rational(1, 4) * (Rational(3, 2)
                                  + Rational(1, 8))
                + Rational(156, 100)) == '1573/800'
+
+    print(Rational(-3, -4))
 
 
