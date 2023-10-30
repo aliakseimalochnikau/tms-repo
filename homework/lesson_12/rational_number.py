@@ -83,6 +83,4 @@ if __name__ == '__main__':
                                  + Rational(1, 8))
                + Rational(156, 100)) == '1573/800'
 
-    print(Rational(-3, -4))
-
 
