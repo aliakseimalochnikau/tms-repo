@@ -11,10 +11,3 @@ class TestHomework:
             pytest.xfail("Who the hell is John Smith!?")
         else:
             print(f"Hello {first_name} {last_name}! Your age is {age}")
-
-
-
-
-
-
-
