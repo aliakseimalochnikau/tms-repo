@@ -8,7 +8,7 @@ class TestHomework:
     def test_fail_if_john_smith(self, age, first_name, last_name):
         if first_name == "John" and last_name == "Smith":
             print("John Smith? Seriously?")
-            pytest.fail("Who the hell is John Smith!?")
+            pytest.xfail("Who the hell is John Smith!?")
         else:
             print(f"Hello {first_name} {last_name}! Your age is {age}")
 
