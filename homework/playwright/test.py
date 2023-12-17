@@ -18,12 +18,12 @@ class TestHomeWork:
         footer_msg = page.locator("xpath=(//*[@class='pmi__footer'])[5]")
 
         # Basic assertions
-        expect(title).to_be_visible()
-        expect(address).to_be_visible()
-        expect(tel_1).to_be_visible()
-        expect(tel_2).to_be_visible()
-        expect(tel_3).to_be_visible()
-        expect(footer_msg).to_be_visible()
+        expect(title).to_be_visible(), "Title was not discovered"
+        expect(address).to_be_visible(), "Address was not discovered"
+        expect(tel_1).to_be_visible(), "Phone 1 was not discovered"
+        expect(tel_2).to_be_visible(), "Phone 2 was not discovered"
+        expect(tel_3).to_be_visible(), "Phone 3 was not discovered"
+        expect(footer_msg).to_be_visible(), "Footer message was not discovered"
 
         # Assert title is bold
         is_bold = int(title.evaluate(
@@ -31,15 +31,15 @@ class TestHomeWork:
             " window.getComputedStyle(e).getPropertyValue('font-weight');"
             "}")
         )
-        assert is_bold >= 700
+        assert is_bold >= 700, "Title has regular font weight, expected: bold"
 
         # Assert phone number matches the pattern
         phone_regex = re.compile(r'8 \(\d{3}\) \d{3}-\d{2}-\d{2}')
-        assert phone_regex.match(tel_1.text_content())
-        assert phone_regex.match(tel_2.text_content())
-        assert phone_regex.match(tel_3.text_content())
+        assert phone_regex.match(tel_1.text_content()), "Phone format doesn't match the pattern '8 (XXX) XXX-XX-XX'"
+        assert phone_regex.match(tel_2.text_content()), "Phone format doesn't match the pattern '8 (XXX) XXX-XX-XX'"
+        assert phone_regex.match(tel_3.text_content()), "Phone format doesn't match the pattern '8 (XXX) XXX-XX-XX'"
 
         # Assert phone number is a link
-        assert tel_1.get_attribute('href')
-        assert tel_2.get_attribute('href')
-        assert tel_3.get_attribute('href')
+        assert tel_1.get_attribute('href'), "Phone is not a link"
+        assert tel_2.get_attribute('href'), "Phone is not a link"
+        assert tel_3.get_attribute('href'), "Phone is not a link"
